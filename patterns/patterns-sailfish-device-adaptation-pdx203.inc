@@ -1,10 +1,10 @@
-%package -n patterns-sailfish-device-adaptation-pdx213
-Summary: Jolla HW Adaptation pdx213
-Requires: droid-hal-pdx213
-Requires: droid-hal-pdx213-img-boot
-Requires: droid-hal-pdx213-img-recovery
-Requires: droid-hal-pdx213-kernel-dtbo
-Requires: droid-hal-pdx213-tools
+%package -n patterns-sailfish-device-adaptation-pdx203
+Summary: Jolla HW Adaptation pdx203
+Requires: droid-hal-pdx203
+Requires: droid-hal-pdx203-img-boot
+Requires: droid-hal-pdx203-img-recovery
+Requires: droid-hal-pdx203-kernel-dtbo
+Requires: droid-hal-pdx203-tools
 
 # Hybris packages
 Requires: libhybris-libEGL
@@ -84,7 +84,7 @@ Requires: sailfish-connman-plugin-suspend
 # Splash screen
 Requires: yamuisplash
 
-%description -n patterns-sailfish-device-adaptation-pdx213
-Pattern with packages for pdx213 HW Adaptation
+%description -n patterns-sailfish-device-adaptation-pdx203
+Pattern with packages for pdx203 HW Adaptation
 
-%files -n patterns-sailfish-device-adaptation-pdx213
+%files -n patterns-sailfish-device-adaptation-pdx203

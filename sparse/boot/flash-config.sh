@@ -7,7 +7,7 @@ FLASH_OPS=(
 "flash dtbo_a dtbo.img"
 "flash dtbo_b dtbo.img"
 "flash userdata sailfish.img001"
-"flash_blob oem_a *_v7b_lena.img"
+"flash_blob oem_a *_v7_edo.img"
 )
 
 GETVAR_ERROR_secure="
@@ -20,7 +20,7 @@ The supported Sony Vendor partition image wasn't found in the current directory.
 Please download it from
 https://developer.sony.com/develop/open-devices/downloads/software-binaries/
 Ensure you download the supported version of the image found under:
-\"Software binaries for AOSP Android 11.0 - Kernel 4.19 - Lena\"
+\"Software binaries for AOSP Android 11.0 - Kernel 4.19 - Edo\"
 and unzip it into this directory.
 Note: information on which versions are supported is written in our Sailfish X
 installation instructions online https://jolla.com/sailfishxinstall
