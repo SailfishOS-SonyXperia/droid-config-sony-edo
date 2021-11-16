@@ -109,9 +109,13 @@ chmod 755 flash.*
 FILES="flash* *.img* *.exe *.dll *-release"
 
 # Set supported devices in flash scripts
-if [ "@DEVICEMODEL@" = "xqbt52" ]; then
-  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-BT52\"/g" -i flash-config.sh
-  sed -e "s/\@DEVICES\@/:: XQ-BT52/g" -i flash-on-windows.bat
+if [ "@DEVICEMODEL@" = "xqat52" ]; then
+  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-AT52\"/g" -i flash-config.sh
+  sed -e "s/\@DEVICES\@/:: XQ-AT51/g" -i flash-on-windows.bat
+fi
+if [ "@DEVICEMODEL@" = "xqat51" ]; then
+  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-AT51\"/g" -i flash-config.sh
+  sed -e "s/\@DEVICES\@/:: XQ-AT51/g" -i flash-on-windows.bat
 fi
 
 mkdir -p ${RELEASENAME}
