@@ -1,6 +1,6 @@
 @echo off
 
-:: This is simple windows flashing script for Sony Xperia 1 II device
+:: This is simple windows flashing script for Sony Xperia 1/5 II device
 :: This script is using fastboot to flash which differs from the factory method.
 
 set tmpflashfile=tmpfile.txt
@@ -11,7 +11,7 @@ set fastbootkillretval=0
 set serialnumbers=
 
 echo(
-echo This is a Windows flashing script for Sony Xperia 1 II device.
+echo This is a Windows flashing script for Sony Xperia 1/5 II device.
 echo(
 echo Power on the device in fastboot mode, by doing the following:
 echo 1. Turn off your Xperia.
@@ -120,7 +120,7 @@ del %tmpflashfile% >NUL 2>NUL
 setlocal EnableDelayedExpansion
 
 :: Find the blob image. Make sure there's only one.
-for /r %%f in (*_v7b_edo.img) do (
+for /r %%f in (*_v9a_edo.img) do (
 if not defined blobfilename (
 REM Take only the filename and strip out the path which otherwise is there.
 REM This is to make sure that we do not face issues later with e.g. spaces in the path etc.
@@ -146,7 +146,7 @@ echo Ensure you download the supported version of the image found under:
 echo "Software binaries for AOSP Android 11.0 - Kernel 4.19 - Lena"
 echo and unzip it into this directory.
 echo Note: information on which versions are supported is written in our Sailfish X
-echo installation instructions online.
+echo installation instructions online https://jolla.com/sailfishxinstall
 echo(
 echo Press enter to open the browser with the webpage.
 echo(
