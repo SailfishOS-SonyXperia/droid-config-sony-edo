@@ -1,7 +1,7 @@
 %define device pdx203
 %define rpm_device xqat52
 
-%define device_pretty Xperia 1 II
+%define device_pretty Xperia 1 II - Dual SIM
 
 # Community HW adaptations need this
 #define community_adaptation 1
