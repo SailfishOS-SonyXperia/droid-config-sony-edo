@@ -1,15 +1,15 @@
-CPUCHECK_STRING="Qualcomm Technologies, Inc LAGOON"
+CPUCHECK_STRING="Qualcomm Technologies, Inc KONA"
 
 # Because of flash-partition checks, 1 needs to be defined
 # Others can go with partition numbers
 PART_1="boot_a"
-PART_32="boot_b"
-PART_66="dtbo_a"
-PART_67="dtbo_b"
+PART_69="dtbo_a"
+PART_78="boot_b"
+PART_83="dtbo_b"
 
-PART_REAL_1="sda31"
-PART_REAL_32="sda32"
-PART_REAL_66="sda66"
-PART_REAL_67="sda67"
+PART_REAL_1="sda64"
+PART_REAL_69="sda69"
+PART_REAL_78="sda78"
+PART_REAL_83="sda83"
 
-PART_I="1 32 66 67"
+PART_I="1 69 78 83"
