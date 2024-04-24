@@ -117,6 +117,10 @@ if [ "@DEVICEMODEL@" = "xqat51" ]; then
   sed -e "s/\@VALID_PRODUCTS\@/\"XQ-AT51\"/g" -i flash-config.sh
   sed -e "s/\@DEVICES\@/:: XQ-AT51/g" -i flash-on-windows.bat
 fi
+if [ "@DEVICEMODEL@" = "xqas52" ]; then
+  sed -e "s/\@VALID_PRODUCTS\@/\"XQ-AS52\"/g" -i flash-config.sh
+  sed -e "s/\@DEVICES\@/:: XQ-AS52/g" -i flash-on-windows.bat
+fi
 
 mkdir -p ${RELEASENAME}
 
